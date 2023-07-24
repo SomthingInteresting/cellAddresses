@@ -25,6 +25,10 @@ describe("getCellAddresses", () => {
   it("Range B1:B3", () => {
     expect(getCellAddresses('B1:B3')).toEqual(['B1', 'B2', 'B3']);
   });
+
+  it("Range C4:C6", () => {
+    expect(getCellAddresses('C4:C6')).toEqual(['C4', 'C5', 'C6']);
+  })
   
   // it("Range B3:D5", function() {
   //   assert.deepEqual(getCellAddresses("B3:D5"), [

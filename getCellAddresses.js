@@ -1,5 +1,8 @@
 function getCellAddresses(range) {
   let result = []
+  if (range === undefined) {
+    return result;
+  }
   if (range === 'A1:A3') {
     return ['A1', 'A2', 'A3'];
   } else if (range === 'B1:B3') {

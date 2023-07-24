@@ -73,3 +73,6 @@ Sudo:
 - sliced variable number = end number
 - sliced variable letter = end letter
 
+Refactoring for error handling:
+
+- Return an empty array if given invalid range

@@ -1,6 +1,11 @@
 function getCellAddresses(range) {
   let result = []
-  if (range) {  
+
+  function isRangeValid() {
+    return range !== undefined && range !== null;
+  }
+
+  if (isRangeValid()) {  
     let [start, end] = range.split(':');
     if (start !== end) {
       let startNumber = start.slice(1, start.length);

@@ -8,8 +8,8 @@ function getCellAddresses(range) {
   if (isRangeValid()) {  
     let [start, end] = range.split(':');
     if (start !== end) {
-      let startNumber = start.slice(1, start.length);
-      let endNumber = end.slice(1, end.length);
+      let startNumber = Number(start.slice(1, start.length));
+      let endNumber = Number(end.slice(1, end.length));
       let startLetter = start.charCodeAt(0);
       let endLetter = end.charCodeAt(0);
       for (let i = startNumber; i <= endNumber; i++) {

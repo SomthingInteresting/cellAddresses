@@ -30,29 +30,29 @@ describe("getCellAddresses", () => {
     expect(getCellAddresses('C4:C6')).toEqual(['C4', 'C5', 'C6']);
   })
   
-  // it("Range B3:D5", function() {
-  //   assert.deepEqual(getCellAddresses("B3:D5"), [
-  //       'B3', 'C3', 'D3',
-  //       'B4', 'C4', 'D4',
-  //       'B5', 'C5', 'D5'
-  //   ]);
-  // });
+  it("Range B3:D5", function() {
+    expect(getCellAddresses("B3:D5")).toEqual([
+        'B3', 'C3', 'D3',
+        'B4', 'C4', 'D4',
+        'B5', 'C5', 'D5'
+    ]);
+  });
   
-  // it("Range A1:B2", function() {
-  //   assert.deepEqual(getCellAddresses("A1:B2"), ['A1', 'B1', 'A2', 'B2']);
-  // });
+  it("Range A1:B2", function() {
+    expect(getCellAddresses("A1:B2")).toEqual(['A1', 'B1', 'A2', 'B2']);
+  });
   
-  // it("Range W118:Z124", function() {
-  //   assert.deepEqual(getCellAddresses("W118:Z124"), [
-  //       'W118', 'X118', 'Y118', 'Z118',
-  //       'W119', 'X119', 'Y119', 'Z119',
-  //       'W120', 'X120', 'Y120', 'Z120',
-  //       'W121', 'X121', 'Y121', 'Z121',
-  //       'W122', 'X122', 'Y122', 'Z122',
-  //       'W123', 'X123', 'Y123', 'Z123',
-  //       'W124', 'X124', 'Y124', 'Z124'
-  //   ]);
-  // });
+  it("Range W118:Z124", function() {
+    expect(getCellAddresses("W118:Z124")).toEqual([
+        'W118', 'X118', 'Y118', 'Z118',
+        'W119', 'X119', 'Y119', 'Z119',
+        'W120', 'X120', 'Y120', 'Z120',
+        'W121', 'X121', 'Y121', 'Z121',
+        'W122', 'X122', 'Y122', 'Z122',
+        'W123', 'X123', 'Y123', 'Z123',
+        'W124', 'X124', 'Y124', 'Z124'
+    ]);
+  });
   
   // it("Range H7:F3 (invalid)", function() {
   //   assert.deepEqual(getCellAddresses("H7:F3"), []);

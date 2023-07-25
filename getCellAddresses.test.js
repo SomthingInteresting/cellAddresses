@@ -1,8 +1,8 @@
 const getCellAddresses = require('./getCellAddresses');
 
 describe("getCellAddresses", () => {
-  xit("Range F12:J17", function() {
-    expect(getCellAddresses("F12:J17")).toBe ([
+  it("Range F12:J17", function() {
+    expect(getCellAddresses("F12:J17")).toEqual([
         'F12', 'G12', 'H12', 'I12',
         'J12', 'F13', 'G13', 'H13',
         'I13', 'J13', 'F14', 'G14',

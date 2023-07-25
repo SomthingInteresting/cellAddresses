@@ -72,6 +72,13 @@ Sudo:
 - sliced variable letter = start letter
 - sliced variable number = end number
 - sliced variable letter = end letter
+- Work out the range of letters that we need to print
+- for (let i = startLetter.charCodeAt(); i <= endLetter.charCodeAt(); i++)
+- For each number between start number and end number {
+  - For each letter between start and end letter range{
+    - Push letter + number to result
+  - }}
+- return result
 
 Refactoring for error handling:
 

@@ -54,13 +54,12 @@ describe("getCellAddresses", () => {
     ]);
   });
   
-  // it("Range H7:F3 (invalid)", function() {
-  //   assert.deepEqual(getCellAddresses("H7:F3"), []);
-  // });
+  it("Range H7:F3 (invalid)", function() {
+    expect(getCellAddresses("H7:F3")).toEqual([]);
+  });
   
-  // it("Range C2:C2 (invalid)", function() {
-  //   assert.deepEqual(getCellAddresses("C2:C2"), []);
-  // });
-
+  it("Range C2:C2 (invalid)", function() {
+    expect(getCellAddresses("C2:C2")).toEqual([]);
+  });
 })
 

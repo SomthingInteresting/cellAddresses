@@ -66,19 +66,17 @@ More examples
 
 Sudo:
 
-- create an empty array (let result)
-- split into two start and end by : input.split(':')
-- sliced variable number = start number
-- sliced variable letter = start letter
-- sliced variable number = end number
-- sliced variable letter = end letter
-- Work out the range of letters that we need to print
-- for (let i = startLetter.charCodeAt(); i <= endLetter.charCodeAt(); i++)
-- For each number between start number and end number {
-  - For each letter between start and end letter range{
+- Create an empty array (let result)
+- Check if range is valid (defined and not null)
+- If range is not valid, return result
+- Split range into start and end (let [start, end] = range.split(':'))
+- If start is the same as end, return result
+- Extract the numerical part and the letter part from the start
+- Extract the numerical part and the letter part from the end
+- For each number between start number and end number:
+  - For each letter between start letter and end letter:
     - Push letter + number to result
-  - }}
-- return result
+- Return result
 
 Refactoring for error handling:
 
